@@ -1,0 +1,9 @@
+.user__col{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.user__body{
+    background-color: rgb(2, 2, 23);
+    color: white;
+}
