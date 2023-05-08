@@ -1,18 +1,28 @@
 import { Container, Row } from "react-bootstrap";
 import User from "./User";
 
-const Users = (props) => {
+// eslint-disable-next-line react/prop-types
+const Users = ({ userData, deleteStudent, edithUser }) => {
   return (
     <Container>
     <Row>
     {
-        props.userData.map((user, index) => {
-            return  <User userInfo={user} key={index}/>
+        // eslint-disable-next-line react/prop-types
+            userData.map((user) => {
+            return  <User userInfo={user} 
+            key={user.id}
+            // eslint-disable-next-line react/prop-types
+            deleteStudent={deleteStudent}
+            updateStudent={edithUser}
+            />
         }) 
     }
     </Row> 
     </Container>
   )
-}
+} 
 
 export default Users;
+
+
+

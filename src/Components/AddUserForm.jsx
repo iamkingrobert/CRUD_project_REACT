@@ -21,6 +21,7 @@ export default class AddUserForm extends Component {
   // Do something with the form data, such as sending it to a server
     handleSubmit = (e) => {
     e.preventDefault();
+    // eslint-disable-next-line react/prop-types
     this.props.addStudent(this.state)
     
     // Clear the form inputs
